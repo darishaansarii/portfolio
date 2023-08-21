@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 50% 0;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile img:hover {
+    transform: scale(1.5);
+    transition: all 1.5s ease-in-out 0.25s;
+    cursor: pointer;
+}
+
+.name-animation {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.name-animation .letter {
+    display: inline-block;
+    transform-origin: center bottom;
+    animation: fadeIn var(--delay) infinite alternate;
+}
+
+@keyframes fadeIn {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.letter:nth-child(odd) {
+    color: #FF6B6B;
+}
+
+.letter:nth-child(even) {
+    color: #f7f7f8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+.section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* About */
+body {
+    background-color: #2d8f7f41;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px #0000001a;
+    border-radius: 10px;
+  }
+
+  h2 {
+    text-shadow: 0 1px 2px grey;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+
+  h2:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out 0.25s;
+    cursor: pointer;
+}
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666666;
+  }
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out 0.25s;
+    cursor: pointer;
+}
+
+.skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 8px;
+}
+
+/* Projects */
+.proj-box1 {
+    display: flex;
+    justify-content: center;
+}
+
+.proj-text1 {
+    width: 50vw;
+    padding: 0 1rem 0 1rem;
+    text-align: justify;
+}
+
+.proj-text1:hover {
+    transform: scale(1.05);
+    transition: all 0.5s steps(2) 0.25s;
+    cursor: pointer;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+video {
+    width: 50vw;
+    border: 2px solid white;
+}
+
+video:hover {
+    transform: scale(1.2);
+    transition: all 1s ease-in-out 0.25s;
+    cursor: pointer;
+}
+
+#accounts h2{
+    margin-right: -5vw;
+}
+
+.acc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vw;
+}
+.acc-container li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    list-style-type: none;
+    width: 7rem;
+    height: 1.5rem;
+    background-color: #00a2ff;
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+
+.acc-container li:hover{
+    transform: scale(1.2);
+    transition: all 1s ease-in-out 0.25s;
+    cursor: pointer;
+}
+
+.acc-container li a{
+    text-decoration: none;
+    color: #f7f7f8;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .profile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .skills {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 769px) {
+    .proj-box1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+}
